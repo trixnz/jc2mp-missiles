@@ -1,7 +1,7 @@
 Just Cause 2: Multiplayer - Missiles
 ==============
 
-A **```Work in progress```** API for creating projectiles inside of JC2-MP.
+A **```WORK IN PROGRESS```** API for creating projectiles inside of JC2-MP.
 
 Usage
 ==============

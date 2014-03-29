@@ -1,7 +1,7 @@
-jc2mp-missiles
+Just Cause 2: Multiplayer - Missiles
 ==============
 
-API for creating missile projectiles inside JC2-MP
+API for creating projectiles inside of JC2-MP.
 
 Usage
 ==============

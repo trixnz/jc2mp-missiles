@@ -28,5 +28,5 @@ class 'Entity'
 class 'Missile'
 
 Events:Subscribe('ModuleLoad', function()
-	EntMgr = EntityManager()
+	EntityManager = EntityManager()
 end)

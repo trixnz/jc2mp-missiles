@@ -9,7 +9,7 @@ end
 function FireTests:LocalPlayerInput(e)
 	if e.input == Action.FireRight then
 		if self.fire_right_timer:GetSeconds() > 1 then
-			EntMgr:CreateEntity('Missile', {
+			EntityManager:CreateEntity('Missile', {
 				origin = Camera:GetPosition(),
 				angle = Camera:GetAngle()
 			})
@@ -19,7 +19,7 @@ function FireTests:LocalPlayerInput(e)
 	end
 
 	-- Update the target of our missiles to our aim position
-	for k, v in ipairs(EntMgr.entities) do
+	for k, v in ipairs(EntityManager.entities) do
 		if class_info(v).name == 'Missile' then
 			v.target_position = Physics:Raycast(Camera:GetPosition(), Camera:GetAngle() * Vector3.Forward, 0, 2000).position
 		end

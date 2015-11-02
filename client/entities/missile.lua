@@ -118,7 +118,7 @@ function Missile:Step()
 	-- If we're aiming for a target, calculate the angle to it.
 	-- Otherwise, Forward is fine.
 	if self:HasTarget() then
-		dir_to_target = Angle.NormalisedDir(self:GetTargetPosition(), self.position)
+		dir_to_target = Vector3.NormalisedDir(self:GetTargetPosition(), self.position)
 		dir_to_target = Angle.FromVectors(Vector3.Forward, dir_to_target)
 	end
 

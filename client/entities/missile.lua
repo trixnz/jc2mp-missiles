@@ -126,7 +126,7 @@ function Missile:Step()
 	-- turning angle.
 	local new_angle	= Angle.RotateToward(self.angle, dir_to_target, math.rad(self.max_turn_angle * self.dt))
 
-	self:SimulateMovement(dir_to_target)
+	self:SimulateMovement(new_angle)
 end
 
 function Missile:BoosterStage()
